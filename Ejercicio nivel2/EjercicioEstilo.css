@@ -4,14 +4,6 @@
     padding: 0;
    }
 
-
-/* body{
-    
-    background: #2980B9;  
-    background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);  
-    background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9); 
-} */
-
 /* Estilo para el contenedor  y para el resto de elemenos que compone la
     pagina para poder posicionarlos */
 
@@ -31,7 +23,7 @@
  }
 
  /* Estilos para el header, el logo y los tres iconos y el posicionamiento 
-    dentro de él */
+    dentro de él, también la imagen que tiene de fondo.  */
  .header{    
     border-radius: 10px;
     background: url('imagen/pagina-web.jpg') no-repeat center center/cover;
@@ -87,13 +79,10 @@
     usando grid para separarlos */
 
 .seccion{
-    flex-flow: column nowrap;
-    /* display: flex;*/ 
+    flex-flow: column nowrap; 
     grid-area: seccion;
     display: grid;
-    grid-gap: 5%;
-    /* max-height: 50%; */
-    
+    grid-gap: 5%;  
 }
 .div-articulos{
     width: 100%;
@@ -140,9 +129,7 @@
     text-transform: uppercase;
     text-align: center;
     justify-content: center;
-    /* display: flex; */
     text-decoration: none;
-
 }
 .div-seccion  a:hover{
     color: white;
@@ -160,7 +147,6 @@ p{
     font-family: 'Open Sans', sans-serif;
     color: rgb(17, 4, 53);
     padding-left: 4% ;
-    /* margin-bottom: 2%; */
     margin-left: 3%;
 }
 
@@ -172,7 +158,6 @@ p{
     padding: 1% ;
     display: flex;
     grid-area: footer;
-   /* margin-top: 1%; */
 }
 .footer i {
     color: black;
@@ -186,6 +171,7 @@ p{
     color: black;
 }
 
+/* con el media hago que cambien de posicion las cajas cuando el tamaño de la pagina en igual o inferior a 768px */
 @media screen and (max-width: 768px){
    .container{ 
                 grid-template-areas:    
